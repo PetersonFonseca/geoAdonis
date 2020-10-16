@@ -20,6 +20,8 @@ class PointController {
    * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
+    const points = Point.all()
+    return points
   }
 
   /**
